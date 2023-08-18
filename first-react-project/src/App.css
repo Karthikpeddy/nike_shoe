@@ -184,7 +184,24 @@ a {
   height: auto;
   border-radius: 15px;
 }
+.stores {
+  /*max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
 
+.stores h1 {
+  text-align: center;
+}
+
+.stores-pic img {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 768px) {
   nav {
     max-width: 100%;
