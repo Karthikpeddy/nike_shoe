@@ -154,3 +154,66 @@ a {
 .about h1 {
   text-align: center;
 }
+@media (max-width: 768px) {
+  nav {
+    max-width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    max-width: 333px;
+    font-weight: 500;
+  }
+
+  .buttons {
+    all: unset;
+    gap: 50px;
+    display: flex;
+  }
+  .home-button {
+    display: flex;
+    gap: 30px;
+  }
+  .login,
+  .getstarted,
+  .shopnow,
+  .category {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .home {
+    height: auto;
+    padding: 20px;
+  }
+
+  .home h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .shopping-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .home-content p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .login-container {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .login-box {
+    width: 100%;
+  }
+}
