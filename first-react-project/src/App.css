@@ -150,10 +150,36 @@ a {
   margin: 0 auto;
   align-items: center;
 }
-
 .about h1 {
   text-align: center;
 }
+.about-content {
+  display: flex;
+
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-matter {
+  max-width: 500px;
+  flex: 1;
+  margin-right: 20px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
 @media (max-width: 768px) {
   nav {
     max-width: 100%;
