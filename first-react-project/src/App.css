@@ -98,6 +98,7 @@ a {
 }
 .home-content p {
   max-width: 400px;
+  font-weight: 400;
 }
 .login-container {
   display: flex;
@@ -169,6 +170,7 @@ a {
 .about-matter {
   max-width: 500px;
   flex: 1;
+  font-weight: 500;
   margin-right: 20px;
   margin: 0 auto;
 }
