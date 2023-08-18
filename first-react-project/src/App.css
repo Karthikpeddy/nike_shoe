@@ -146,9 +146,13 @@ a {
   background-color: #0056b3;
 }
 .about {
-  max-width: 1280px;
+  /*  max-width: 1280px;
   margin: 0 auto;
+  align-items: center;*/
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  height: 100vh;
 }
 .about h1 {
   text-align: center;
@@ -171,7 +175,6 @@ a {
 
 .about-image {
   flex: 1;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .about-image img {
