@@ -1,7 +1,10 @@
 import { Link } from "react-scroll";
 const Navbar = () => {
   return (
-    <nav>
+    <nav
+      class="flex items-center justify-between p-6 lg:px-8"
+      aria-label="Global"
+    >
       <div className="Logo">
         <img
           src="/brand_logo.png
