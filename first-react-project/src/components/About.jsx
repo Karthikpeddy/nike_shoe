@@ -3,7 +3,7 @@ const About = () => {
     <div className="about">
       <div className="about-content">
         <div className="about-matter">
-          <h1>About Us</h1>{" "}
+          <h1 className="text-2xl font-bold">About Us</h1>
           <p>
             We champion continual progress for athletes and sport by taking
             action to help athletes reach their potential. Every job at NIKE,

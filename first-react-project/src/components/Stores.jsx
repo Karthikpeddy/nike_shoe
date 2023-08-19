@@ -3,7 +3,7 @@ const Stores = () => {
     <div className="stores">
       <div className="stores-content">
         <div className="stores-heading">
-          <h1>Stores</h1>
+          <h1 className="text-2xl font-bold">Stores</h1>
         </div>
         <div className="stores-pic">
           <img src="./store_pic.jpeg" alt="stores-pic" />
