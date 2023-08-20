@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="buttons">
         <div>
           <a href="Login01">
-            <button className="login">Login</button>
+            <button className="login ">Login</button>
           </a>
         </div>
         <div>

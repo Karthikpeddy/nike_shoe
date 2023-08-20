@@ -11,10 +11,10 @@ const Home = () => {
         <br />
         <div className="home-button">
           <div>
-            <button className="shopnow">SHOP NOW</button>
+            <button className="shopnow rounded-full">SHOP NOW</button>
           </div>
           <div>
-            <button className="category">Category</button>
+            <button className="category rounded-full">Category</button>
           </div>
         </div>
         <br />
