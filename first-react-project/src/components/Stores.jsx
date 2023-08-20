@@ -15,7 +15,7 @@ const Stores = () => {
     <div className="stores">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-3xl font-bold text-center">Stores</p>
+          <p className="text-2xl font-bold text-center">Stores</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-8">
           <div className="rounded-xl shadow-md shadow-[#040c16] hover:scale-110 duration-500">
