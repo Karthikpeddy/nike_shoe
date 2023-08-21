@@ -9,7 +9,10 @@ const Home = () => {
   return (
     <main className="home bg-white">
       <div className="home-content">
-        <h1>YOUR FEET DESERVE THE BEST</h1>
+        <h1>
+          YOUR FEET <br /> DESERVE THE <br />
+          BEST
+        </h1>
         <p>
           YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
           SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR

@@ -62,13 +62,13 @@ a {
 }
 
 .category {
-  all: unset;
+  /*all: unset;
   padding: 6px 16px;
 
   gap: 10px;
   height: 28px;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 500;*/
 }
 .home-button {
   display: flex;
@@ -98,7 +98,7 @@ a {
   gap: 15px;
 }
 .home-content p {
-  max-width: 400px;
+  max-width: 390px;
   font-weight: 400;
 }
 .login-container {
