@@ -26,7 +26,7 @@ const Home = () => {
               data-dropdown-toggle="dropdown"
               class="z-10 inline-flex flex-shrink-0 items-center rounded-lg border border-gray-500 bg-gray-50 px-4 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               type="button"
-              onClick={toggleDropdown}
+              onClick={() => setDropdownOpen((prev) => !prev)}
             >
               Categories
               <svg
@@ -59,7 +59,7 @@ const Home = () => {
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Shopping
+                      New & Featured
                     </a>
                   </li>
                   <li>
@@ -67,7 +67,7 @@ const Home = () => {
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Images
+                      Men
                     </a>
                   </li>
                   <li>
@@ -75,7 +75,7 @@ const Home = () => {
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      News
+                      Women
                     </a>
                   </li>
                   <li>
@@ -83,7 +83,7 @@ const Home = () => {
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Finance
+                      Kids
                     </a>
                   </li>
                 </ul>
