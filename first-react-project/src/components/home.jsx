@@ -15,8 +15,8 @@ const Home = () => {
         </h1>
         <p>
           YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
-          SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
-          SHOES.
+          SHOES.OUR SHOES FIT RIGHT IN LUXERY AND COMFORTNESS . OUR LATEST
+          RELEASE IS NIKE AIR JORDEN
         </p>
         <br />
         <div className="home-button">
