@@ -37,9 +37,10 @@ const Navbar = () => {
       </ul>
       <div className="buttons">
         <div>
-          <a href="Login01">
+          <Link to="/">
+            {" "}
             <button className="login ">Login</button>
-          </a>
+          </Link>
         </div>
         <div>
           <a href="#">
