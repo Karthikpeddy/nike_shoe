@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 const Home = () => {
-  const [isDropdownOpen, setisDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     console.log(isDropdownOpen);
-    setDropdownOpen(!isDropdownOpen);
+    setIsDropdownOpen(!isDropdownOpen);
   };
   return (
     <main className="home bg-white">
@@ -29,7 +29,7 @@ const Home = () => {
               data-dropdown-toggle="dropdown"
               className="z-10 inline-flex flex-shrink-0 items-center rounded-lg border border-gray-500 bg-gray-50 px-4 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               type="button"
-              onClick={() => setisDropdownOpen((prev) => !prev)}
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
               Categories
               <svg
@@ -92,7 +92,6 @@ const Home = () => {
                 </ul>
               </div>
             )}
-            ;
           </div>
         </div>
         <br />
