@@ -1,6 +1,11 @@
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const navigatetologin = () => {
+    navigate("/login");
+  };
   return (
     <nav
       class="flex items-center justify-between p-6 lg:px-8"
@@ -37,9 +42,9 @@ const Navbar = () => {
       </ul>
       <div className="buttons">
         <div>
-          <Link to="/">
-            <button className="login ">Login</button>
-          </Link>
+          <button className="login " onClick={navigatetologin}>
+            Login
+          </button>
         </div>
         <div>
           <a href="#">
