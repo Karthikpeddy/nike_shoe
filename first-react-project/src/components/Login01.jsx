@@ -18,8 +18,8 @@ const Login = () => {
             <input
               type="text"
               placeholder="Username"
-              pattern="[a-z0-9._%+\-]"
-              title=""
+              pattern="[a-z]{1,15}"
+              title="Must Contain Only lowercase letters and upto only 15 characters"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -39,8 +39,7 @@ const Login = () => {
           </button>
           <br />
           <br />
-          <p className="mb-3 text-gray-500 ">Not Registered ?</p>
-          <link to></link>
+          <p className="mb-3 text-gray-800 ">Not Registered ?</p>
         </form>
       </div>
     </div>
