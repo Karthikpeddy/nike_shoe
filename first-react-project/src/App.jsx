@@ -15,7 +15,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            index
             element={
               <div>
                 <Navbar />

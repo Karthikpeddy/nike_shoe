@@ -51,7 +51,7 @@ const Home = () => {
             {isDropdownOpen && (
               <div
                 id="dropdown"
-                className="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700"
+                className="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700 "
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"

@@ -6,6 +6,9 @@ const Navbar = () => {
   const navigatetologin = () => {
     navigate("/login");
   };
+  const navigatetosignup = () => {
+    navigate("/signup");
+  };
   return (
     <nav
       class="flex items-center justify-between p-6 lg:px-8"
@@ -48,7 +51,9 @@ const Navbar = () => {
         </div>
         <div>
           <a href="#">
-            <button className="getstarted">Get Started</button>
+            <button className="getstarted" onClick={navigatetosignup}>
+              Get Started
+            </button>
           </a>
         </div>
       </div>

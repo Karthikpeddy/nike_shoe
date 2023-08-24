@@ -1,3 +1,5 @@
+import React from "react";
+
 const Signup = () => {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
