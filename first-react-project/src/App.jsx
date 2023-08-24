@@ -14,15 +14,22 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navbar />} />
+          <Route
+            path="/"
+            element={
+              <div>
+                <Navbar />
+                <Home />
+                <About />
+                <Stores />
+                <Contact />
+              </div>
+            }
+          />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
-      <Home />
-      <About />
-      <Stores />
-      <Contact />
     </div>
   );
 };
