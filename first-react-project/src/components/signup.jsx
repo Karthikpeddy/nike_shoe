@@ -1,4 +1,11 @@
 const Signup = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    // Add your authentication logic here (not included in this example)
+    console.log("Logging in...");
+  };
   return (
     <div className="login-container">
       <div className="login-box">
