@@ -45,16 +45,17 @@ const Navbar = () => {
       </ul>
       <div className="buttons">
         <div>
-          <button className="login " onClick={navigatetologin}>
+          <button className="login cursor-pointer" onClick={navigatetologin}>
             Login
           </button>
         </div>
         <div>
-          <a href="#">
-            <button className="getstarted" onClick={navigatetosignup}>
-              Get Started
-            </button>
-          </a>
+          <button
+            className="getstarted cursor-pointer"
+            onClick={navigatetosignup}
+          >
+            Get Started
+          </button>
         </div>
       </div>
     </nav>
