@@ -35,7 +35,7 @@ const Signup = () => {
               onChange={(e) => setLastName(e.target.value)}
             />
           </div>
-          <div className="input-container-datepicker">
+          <div className="input-container">
             <DatePicker
               selected={selectedDate}
               onChange={(date) => setselectedDate(date)}
