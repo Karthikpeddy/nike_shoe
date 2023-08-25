@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Signup = () => {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [selectedDate, setselectedDate] = useState(null);
 
   const handleLogin = () => {
     // Add your authentication logic here (not included in this example)
@@ -30,6 +33,15 @@ const Signup = () => {
               placeholder="Last Name"
               value={LastName}
               onChange={(e) => setLastName(e.target.value)}
+            />
+          </div>
+          <div className="input-container-datepicker">
+            <DatePicker
+              selected={selectedDate}
+              onChange={(date) => setselectedDate(date)}
+              placeholderText="Date of Birth"
+              dateFormat="dd/MM/yyyy"
+              maxDate={new Date()}
             />
           </div>
           <div className="input-container">
