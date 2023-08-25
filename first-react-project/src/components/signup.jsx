@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [FirstName, setFirstName] = useState("");
@@ -18,7 +19,7 @@ const Signup = () => {
     <div className="contact">
       <div className="contact-heading">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h1 className="text-lg font-bold text-center">Signup</h1>
+          <h1 className="text-lg font-bold text-center">Signup </h1>
           <br />
           <form>
             <div class="grid gap-6 mb-6 md:grid-cols-2 ">
@@ -82,6 +83,14 @@ const Signup = () => {
               >
                 Sign Up
               </button>
+            </div>
+            <br />
+            <div className="flex justify-center">
+              <Link to={"/login"}>
+                <p className="mb-3 text-gray-800 ">
+                  ALready Registered ? Login
+                </p>
+              </Link>
             </div>
           </form>
         </div>
