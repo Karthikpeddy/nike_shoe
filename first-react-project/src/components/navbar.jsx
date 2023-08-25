@@ -22,22 +22,22 @@ const Navbar = () => {
         />
       </div>
       <ul>
-        <li>
+        <li className="cursor-pointer">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className="cursor-pointer">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className="cursor-pointer">
           <Link to="stores" smooth={true} duration={500}>
             Stores
           </Link>
         </li>
-        <li>
+        <li className="cursor-pointer">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
