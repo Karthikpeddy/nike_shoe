@@ -1,4 +1,9 @@
+import React from "react";
+import { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 const Contact = () => {
+  const [selectedDate, setselectedDate] = useState(null);
   return (
     <div className="contact">
       <div className="contact-heading">
