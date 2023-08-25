@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login01";
 import Signup from "./components/signup";
 import { BrowserRouter } from "react-router-dom";
+import Contact_s from "./components/contact_s";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="contact_s" element={<Contact_s />} />
         </Routes>
       </BrowserRouter>
     </div>
