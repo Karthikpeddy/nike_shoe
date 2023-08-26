@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+  const navigate = useNavigate();
+  const navigatetoshopnow = () => {
+    navigate("/shopnow");
+  };
   const toggleDropdown = () => {
     console.log(isDropdownOpen);
     setIsDropdownOpen(!isDropdownOpen);
@@ -21,7 +25,12 @@ const Home = () => {
         <br />
         <div className="home-button">
           <div>
-            <button className="shopnow ">SHOP NOW</button>
+            <button
+              className="shopnow cursor-pointer "
+              onClick={navigatetoshopnow}
+            >
+              SHOP NOW
+            </button>
           </div>
           <div className="flex">
             <button
