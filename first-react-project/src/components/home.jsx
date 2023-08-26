@@ -18,7 +18,7 @@ const Home = () => {
         <h1>
           YOUR FEET <br /> DESERVE THE <br />
           <Typed
-            strings={["LOVE", "CARE", "BEST"]}
+            strings={["CARE", "LOVE", "BEST"]}
             typeSpeed={150}
             backSpeed={100}
             loop
