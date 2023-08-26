@@ -13,7 +13,7 @@ const Home = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <main className="home bg-white">
+    <main className="home bg-white" id="home">
       <div className="home-content">
         <h1>
           YOUR FEET <br /> DESERVE THE <br />

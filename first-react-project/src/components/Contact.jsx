@@ -8,7 +8,7 @@ const Contact = () => {
     navigate("contact_s");
   };
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-heading">
         <h1 className="text-2xl font-bold text-center">Contact</h1>
         <br />
