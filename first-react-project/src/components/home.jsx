@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Typed from "react-typed";
+/*import { useTypewriter, cursor } from "react-simple-typewriter";*/
 const Home = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
@@ -15,7 +17,12 @@ const Home = () => {
       <div className="home-content">
         <h1>
           YOUR FEET <br /> DESERVE THE <br />
-          BEST
+          <Typed
+            strings={["LOVE", "CARE", "BEST"]}
+            typeSpeed={150}
+            backSpeed={100}
+            loop
+          />
         </h1>
         <p>
           YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
