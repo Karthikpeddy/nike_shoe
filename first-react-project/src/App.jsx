@@ -10,6 +10,7 @@ import Signup from "./components/signup";
 import { BrowserRouter } from "react-router-dom";
 import Contact_s from "./components/contact_s";
 import Shopnow from "./components/Shopnow";
+import ProductDetails from "./components/ProductDetails";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="signup" element={<Signup />} />
           <Route path="contact_s" element={<Contact_s />} />
           <Route path="shopnow" element={<Shopnow />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
