@@ -12,7 +12,7 @@ const Shopnow = () => {
             <p className="my-4">Nike AIR</p>
             <img src={NIKE01} alt="" />
             <div className="flex space-x-4 p-6">
-              <p>$49.99</p>
+              <p>$99.99</p>
               <p>Add to cart</p>
             </div>
           </div>
