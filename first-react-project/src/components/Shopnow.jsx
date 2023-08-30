@@ -40,6 +40,14 @@ const Shopnow = () => {
               <p>Add to cart</p>
             </div>
           </div>
+          <div className="rounded-xl shadow-md bg-[#f6f6f6] shadow-[#040c16] hover:scale-110 duration-500">
+            <p className="my-4">Nike AIR</p>
+            <img src={NIKE02} alt="" />
+            <div className="flex space-x-4 p-6">
+              <p>$79.99</p>
+              <p>Add to cart</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
