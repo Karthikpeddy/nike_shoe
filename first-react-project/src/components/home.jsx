@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Typed from "react-typed";
+
 /*import { useTypewriter, cursor } from "react-simple-typewriter";*/
 const Home = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -12,6 +13,7 @@ const Home = () => {
     console.log(isDropdownOpen);
     setIsDropdownOpen(!isDropdownOpen);
   };
+
   return (
     <main className="home bg-white" id="home">
       <div className="home-content">

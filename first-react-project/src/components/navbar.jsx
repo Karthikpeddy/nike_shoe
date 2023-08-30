@@ -1,5 +1,6 @@
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -9,6 +10,9 @@ const Navbar = () => {
   const navigatetosignup = () => {
     navigate("/signup");
   };
+  useEffect(() => {
+    scroll.scrollTo("about");
+  }, []);
   return (
     <nav
       class="flex items-center justify-between p-6 lg:px-8"
