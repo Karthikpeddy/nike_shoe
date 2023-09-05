@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -121,13 +122,15 @@ const Contact = () => {
             </label>
           </div>
           <div className="flex justify-center">
-            <button
+            <motion.button
+              whileHover={{ scale: 0.9 }}
+              whileTap={{ scale: 0.6 }}
               type="submit"
               onClick={navigatetoresponse}
-              class="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white  bg-blue-700  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Submit
-            </button>
+            </motion.button>
           </div>
         </form>
       </div>

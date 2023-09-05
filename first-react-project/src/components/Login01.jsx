@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarL from "./navbar_l";
+import { motion } from "framer-motion";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -46,12 +47,14 @@ const Login = () => {
               </div>
 
               <div className="flex justify-center">
-                <button
-                  class="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                <motion.button
+                  whileHover={{ scale: 0.9 }}
+                  whileTap={{ scale: 0.6 }}
+                  class="text-white  bg-blue-700  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   onClick={handleLogin}
                 >
                   Login
-                </button>
+                </motion.button>
               </div>
               <br />
               <Link to={"/signup"}>
