@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Typed from "react-typed";
+import { motion } from "framer-motion";
 
 /*import { useTypewriter, cursor } from "react-simple-typewriter";*/
 const Home = () => {
@@ -34,12 +35,13 @@ const Home = () => {
         <br />
         <div className="home-button">
           <div>
-            <button
+            <motion.button
+              whileTap={{ scale: 0.6 }}
               className="shopnow cursor-pointer "
               onClick={navigatetoshopnow}
             >
               SHOP NOW
-            </button>
+            </motion.button>
           </div>
           <div className="flex">
             <button

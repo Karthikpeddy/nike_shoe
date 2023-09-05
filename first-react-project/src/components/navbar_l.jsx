@@ -15,7 +15,7 @@ const NavbarL = () => {
       class="flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
-      <div className="Logo">
+      <motion.div whileTap={{ scale: 0.6 }} className="Logo">
         <Link to="/">
           <img
             src="/brand_logo.png
@@ -23,7 +23,7 @@ const NavbarL = () => {
             alt="nike"
           />
         </Link>
-      </div>
+      </motion.div>
       <ul>
         <li className="cursor-pointer">
           <Link to="/#home" smooth={true} duration={500}>
