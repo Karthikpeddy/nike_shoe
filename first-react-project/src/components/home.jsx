@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Typed from "react-typed";
 import { motion } from "framer-motion";
+import TextAnimation from "./TextAnimation";
 
 /*import { useTypewriter, cursor } from "react-simple-typewriter";*/
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
           <div>
             <motion.button
               whileTap={{ scale: 0.6 }}
+              whileHover={{ scale: 0.9 }}
               className="shopnow cursor-pointer "
               onClick={navigatetoshopnow}
             >

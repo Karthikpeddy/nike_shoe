@@ -26,11 +26,13 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
         className="Logo cursor-pointer"
       >
-        <img
-          src="/brand_logo.png
+        <Link to="/">
+          <img
+            src="/brand_logo.png
         "
-          alt="nike"
-        />
+            alt="nike"
+          />
+        </Link>
       </motion.div>
       <ul>
         <motion.li
