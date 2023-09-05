@@ -1,6 +1,7 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -49,17 +50,22 @@ const Navbar = () => {
       </ul>
       <div className="buttons">
         <div>
-          <button className="login cursor-pointer" onClick={navigatetologin}>
+          <motion.button
+            whileTap={{ scale: 0.6 }}
+            className="login cursor-pointer"
+            onClick={navigatetologin}
+          >
             Login
-          </button>
+          </motion.button>
         </div>
         <div>
-          <button
+          <motion.button
+            whileTap={{ scale: 0.6 }}
             className="getstarted cursor-pointer"
             onClick={navigatetosignup}
           >
             Get Started
-          </button>
+          </motion.button>
         </div>
       </div>
     </nav>

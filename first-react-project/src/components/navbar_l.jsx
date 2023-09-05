@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const NavbarL = () => {
   const navigate = useNavigate();
@@ -47,12 +48,13 @@ const NavbarL = () => {
       </ul>
       <div className="buttons">
         <div>
-          <button
+          <motion.button
+            whileTap={{ scale: 0.6 }}
             className="getstarted cursor-pointer"
             onClick={navigatetosignup}
           >
             Get Started
-          </button>
+          </motion.button>
         </div>
       </div>
     </nav>

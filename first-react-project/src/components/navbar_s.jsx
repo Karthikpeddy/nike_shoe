@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import { motion } from "framer-motion";
 const NavbarS = () => {
   const navigate = useNavigate();
   const navigatetologin = () => {
@@ -47,9 +47,13 @@ const NavbarS = () => {
       </ul>
       <div className="buttons">
         <div>
-          <button className="login cursor-pointer" onClick={navigatetologin}>
+          <motion.button
+            whileTap={{ scale: 0.6 }}
+            className="login cursor-pointer"
+            onClick={navigatetologin}
+          >
             Login
-          </button>
+          </motion.button>
         </div>
       </div>
     </nav>
