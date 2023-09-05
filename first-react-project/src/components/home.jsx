@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Typed from "react-typed";
 import { motion } from "framer-motion";
-import TextAnimation from "./TextAnimation";
 
 /*import { useTypewriter, cursor } from "react-simple-typewriter";*/
 const Home = () => {
