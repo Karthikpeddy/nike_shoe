@@ -15,7 +15,11 @@ const NavbarL = () => {
       class="flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
-      <motion.div whileTap={{ scale: 0.6 }} className="Logo">
+      <motion.div
+        whileTap={{ scale: 0.6 }}
+        whileHover={{ scale: 0.9 }}
+        className="Logo"
+      >
         <Link to="/">
           <img
             src="/brand_logo.png
@@ -25,31 +29,32 @@ const NavbarL = () => {
         </Link>
       </motion.div>
       <ul>
-        <li className="cursor-pointer">
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="/#home" smooth={true} duration={500}>
             Home
           </Link>
-        </li>
-        <li className="cursor-pointer">
+        </motion.li>
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="/#about" smooth={true} duration={500}>
             About
           </Link>
-        </li>
-        <li className="cursor-pointer">
+        </motion.li>
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="/#stores" smooth={true} duration={500}>
             Stores
           </Link>
-        </li>
-        <li className="cursor-pointer">
+        </motion.li>
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="/#scontact" smooth={true} duration={500}>
             Contact
           </Link>
-        </li>
+        </motion.li>
       </ul>
       <div className="buttons">
         <div>
           <motion.button
             whileTap={{ scale: 0.6 }}
+            whileHover={{ scale: 0.9 }}
             className="getstarted cursor-pointer"
             onClick={navigatetosignup}
           >
