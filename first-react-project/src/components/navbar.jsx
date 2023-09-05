@@ -19,13 +19,18 @@ const Navbar = () => {
       class="flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
-      <div className="Logo">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="Logo"
+      >
         <img
           src="/brand_logo.png
         "
           alt="nike"
         />
-      </div>
+      </motion.div>
       <ul>
         <li className="cursor-pointer">
           <Link to="home" smooth={true} duration={500}>
