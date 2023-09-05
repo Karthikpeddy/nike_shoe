@@ -20,10 +20,11 @@ const Navbar = () => {
       aria-label="Global"
     >
       <motion.div
+        whileHover={{ scale: 0.9 }}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="Logo"
+        className="Logo cursor-pointer"
       >
         <img
           src="/brand_logo.png
@@ -32,31 +33,35 @@ const Navbar = () => {
         />
       </motion.div>
       <ul>
-        <li className="cursor-pointer">
+        <motion.li
+          whileHover={{ scale: 0.9 }}
+          className="cursor-pointer rounded-lg"
+        >
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
-        </li>
-        <li className="cursor-pointer">
+        </motion.li>
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
-        </li>
-        <li className="cursor-pointer">
+        </motion.li>
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="stores" smooth={true} duration={500}>
             Stores
           </Link>
-        </li>
-        <li className="cursor-pointer">
+        </motion.li>
+        <motion.li whileHover={{ scale: 0.9 }} className="cursor-pointer">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
-        </li>
+        </motion.li>
       </ul>
       <div className="buttons">
         <div>
           <motion.button
             whileTap={{ scale: 0.6 }}
+            whileHover={{ scale: 0.9 }}
             className="login cursor-pointer"
             onClick={navigatetologin}
           >
@@ -66,6 +71,7 @@ const Navbar = () => {
         <div>
           <motion.button
             whileTap={{ scale: 0.6 }}
+            whileHover={{ scale: 0.9 }}
             className="getstarted cursor-pointer"
             onClick={navigatetosignup}
           >
